@@ -1,0 +1,22 @@
+.about-block {
+    margin-top: 130px;
+    padding-bottom: 40px;
+    @include breakpoint(sm){
+        margin-top: 160px;
+        padding-bottom: 60px;
+    }
+    &__content {
+        text-align: center;
+        width: 95%;
+        margin: 0 auto;
+        @include breakpoint(sm){
+            width: 80%;
+        }
+        @include breakpoint(lg){
+            width: 70%;
+        }
+        @include breakpoint(xl) {
+            width: 60%;
+        }
+    }
+}

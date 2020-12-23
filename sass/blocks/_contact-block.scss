@@ -1,0 +1,10 @@
+.contact-block {
+    background: rgba($light-blue, 0.2);
+    .contact-form {
+        width: 100%;
+        margin: 0 auto;
+        @include breakpoint(lg){
+            width: 70%;
+        }
+    }
+}

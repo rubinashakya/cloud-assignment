@@ -1,0 +1,102 @@
+.testimonial-carousel {
+    height: 100%;
+
+    &:focus {
+        outline: none;
+        border: none;
+    }
+
+    &__item {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+
+        &:before {
+            content: '';
+            background: rgb(11, 89, 175);
+            background: linear-gradient(180deg, rgba(11, 89, 175, 1) 0%, rgba(6, 69, 140, 1) 40%, rgba(4, 44, 89, 1) 100%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            opacity: 0.7;
+        }
+
+        &:focus {
+            outline: none;
+            border: none;
+        }
+    }
+
+    &__content {
+        color: $white;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+        padding: 40px 20px;
+        @include breakpoint(sm){
+            padding: 40px;
+        }
+        @include breakpoint(lg){
+            padding: 60px;
+        }
+        @include breakpoint(xl){
+            padding: 75px;
+        }
+        @include breakpoint(xxl){
+            padding: 100px;
+        }
+        .h2 {
+            color: $white;
+            font-weight: $medium;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        .h3 {
+            color: $white;
+            display: block;
+            font-weight: $medium;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        p {
+            color: $white;
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+            position: relative;
+            padding: 0 25px;
+            @include breakpoint(sm){
+                font-size: 18px;
+                line-height: 28px;
+            }
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                font-family: "Font Awesome 5 Free";
+                font-size: 20px;
+            }
+
+            &:before {
+                content: '\f10d';
+                top: 0;
+                left: 0;
+            }
+
+            &:after {
+                content: '\f10e';
+                bottom: 0;
+                right: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "../node_modules/bootstrap/scss/bootstrap-reboot.scss";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/slick-carousel/slick/slick.scss";
+
+// Helper 
+@import "helper/reset";
+@import "helper/variables";
+@import "helper/mixins";
+
+//Global
+@import "global/general";
+@import "global/fonts";
+@import "global/typography";
+
+//Component
+@import "component/buttons";
+@import "component/form";
+
+//Vendor 
+@import "vendor/slick-slider";
+
+//Layout
+@import "layout/header";
+@import "layout/footer";
+@import "layout/navbar";
+
+//Blocks
+@import "blocks/search-block";
+@import "blocks/title-block";
+@import "blocks/banner";
+@import "blocks/video-block";
+@import "blocks/about-block";
+@import "blocks/data-label-block";
+@import "blocks/why-choose-us-block";
+@import "blocks/testimonial-block";
+@import "blocks/contact-block";
+

@@ -1,0 +1,67 @@
+form {
+    .form-group {
+        @include border-radius(4px);
+        background: $white;
+        border: 1px solid #b8b4b4;
+        margin-bottom: 15px;
+        position: relative;
+        transition: 0.4s all ease-in-out;
+        @include breakpoint(sm){
+            margin-bottom: 30px;
+        }
+        &.active {
+            border: 1px solid $blue;
+            .floating-label {
+                background: $white;
+                top: -12px;
+                font-size: 14px;
+                font-weight: $medium;
+                z-index: 2;
+            }
+        }
+        .floating-label {
+            background: transparent;
+            padding: 0 5px;
+            position: absolute;
+            top: 11px;
+            left: 15px;
+            color: $gray;
+            transition: 0.4s all ease-in-out;
+        }
+    }
+    .form-control {
+        @include border-radius(4px);
+        background: transparent;
+        border: none;
+        outline: none;
+        color: $gray;
+        padding: 12px 15px;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: $regular;
+        height: 100%;
+        transition: 0.4s all ease-in-out;
+        height: 46px;
+        position: relative;
+        z-index: 1;
+        &.form-control-lg {
+            height: 52px;
+        }
+        &.form-control-sm {
+            height: 38px;
+        }
+        &:focus {
+            box-shadow: none;
+        }
+        @include placeholder {
+            color: $gray;
+        }
+    }
+    textarea {
+        min-height: 200px;
+    }
+    .btn--primary {
+        padding: 10px;
+        width: 100%;
+    }
+}

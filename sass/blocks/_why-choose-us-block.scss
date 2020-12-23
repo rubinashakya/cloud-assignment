@@ -1,0 +1,42 @@
+.why-choose-block {
+    padding: 40px 20px !important;
+    h2 {
+        text-align: center;
+    }
+    @include breakpoint(sm){
+        text-align: left;
+        padding: 60px 20px !important;
+    }
+    @include breakpoint(lg){
+        padding: 60px !important;
+    }
+    &__item {
+        display: flex;
+        align-self: center;
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .h3 {
+            color: $gray-200;
+            margin-bottom: 10px;
+        }
+    }
+    &__icon {
+        width: 100%;
+        height: 80px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: scale-down;
+        }
+    }
+    &__content {
+        text-align: center;
+        margin-top: 15px;
+        @include breakpoint(sm){
+            text-align: left;
+            margin-top: 0;
+        }
+    }
+}

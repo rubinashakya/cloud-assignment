@@ -1,0 +1,40 @@
+.navbar {
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+    transition: 0.4s all ease-in-out;
+    z-index: 10;
+    &.sticky {
+        background: $blue;
+        padding: 10px 0;
+    }
+    &__logo {
+        line-height: 0;
+        width: 150px;
+        @include breakpoint(xs){
+            width: 200px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .d-flex {
+        width: 100%;
+        align-items: center;
+    }
+    .ml-auto {
+        display: inline-flex;
+        align-items: center;
+        .btn {
+            padding: 5px 8px;
+            font-size: 13px;
+            @include breakpoint(xs){
+                padding: 8px 20px;
+                font-size: 16px;
+            }
+        }
+    }
+}

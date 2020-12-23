@@ -1,0 +1,27 @@
+.btn {
+    color: $white;
+    font-size: 16px;
+    font-weight: $medium;
+    line-height: 24px;
+    padding: 8px 20px;
+    border: 1px solid transparent;
+    transition: 0.4s all ease-in-out;
+    &:hover {
+        color: $white;
+    }
+    &--primary {
+        background: $orange;
+        border-color: $orange;
+        &:hover {
+            background: #df4604;
+            border-color: #df4604;
+        }
+    }
+    &--secondary-outline {
+        border-color: $white;
+        &:hover {
+            background: $orange;
+            border-color: $orange;
+        }
+    }
+}

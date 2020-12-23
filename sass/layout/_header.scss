@@ -1,0 +1,27 @@
+header {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 460px;
+    padding-top: 90px;
+    padding-bottom: 130px;
+    position: relative;
+    @include breakpoint(sm){
+        min-height: 500px;
+        padding-bottom: 280px;
+    }
+    &:before {
+        content: '';
+        background: #0650A0;
+        background: -webkit-linear-gradient(top left, #0650A0, #F75A16);
+        background: -moz-linear-gradient(top left, #0650A0, #F75A16);
+        background: linear-gradient(to bottom right, #0650A0, #F75A16);
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        opacity: 0.85;
+    }
+}
