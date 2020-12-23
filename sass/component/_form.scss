@@ -57,6 +57,12 @@ form {
             color: $gray;
         }
     }
+    span.error {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        color: $red;
+    }
     textarea {
         min-height: 200px;
     }
