@@ -1,0 +1,34 @@
+.data-label-service-col {
+    margin-bottom: 30px;
+}
+
+.data-label-service {
+    @include border-radius(5px);
+    background: rgba(31, 137, 222, 0.2);
+    overflow: hidden;
+    height: 100%;
+    &:hover {
+        .data-label-service__image {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+    &__image {
+        width: 100%;
+        height: 260px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.4s all ease-in-out;
+        }
+    }
+    &__content {
+        padding: 20px;
+        .h3 {
+            color: $dark-blue;
+        }
+    }
+}
